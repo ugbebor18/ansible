@@ -2,8 +2,6 @@
 App_Server ansible_host=44.200.207.238
 App_Server1 ansible_host=3.86.151.135
 
-[servers_group:vars]
-ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
