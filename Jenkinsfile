@@ -3,7 +3,7 @@ pipeline{
   stages{  
       stage("Run an ansible playbook"){
         steps{
-          sh 'ansible-playook -i hosts nginx_install.yaml '
+          sh 'ansible-playbook -i hosts nginx_install.yaml'
         }
       }
    }
